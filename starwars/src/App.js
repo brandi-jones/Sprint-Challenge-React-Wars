@@ -57,6 +57,7 @@ const App = () => {
     </Container>
 
     <ButtonDiv>
+      <Button color="secondary" size="lg" onClick={() => setPageNum(pageNum - 1)}>Previous Page</Button>{' '}
       <Button color="secondary" size="lg" onClick={() => setPageNum(pageNum + 1)}>Next Page</Button>{' '}
     </ButtonDiv>
     
