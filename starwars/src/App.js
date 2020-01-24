@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import './App.css';
 import CharacterCard from "./components/CharacterCard";
+import Header from "./components/Header";
 import {Container, Row} from "reactstrap";
 
 const App = () => {
@@ -27,6 +28,10 @@ const App = () => {
   }, []);
 
   return (
+    <>
+
+    <Header/>
+    
     <Container>
         <Row xs="2"> 
 
@@ -37,6 +42,8 @@ const App = () => {
 
       </Row>
     </Container>
+    
+    </>
   );
 }
 
